@@ -8,7 +8,7 @@ metainfo = dict(classes=class_name, palette=[(20, 220, 60)])
 num_last_epochs = 5
 
 max_epochs = 40
-train_batch_size_per_gpu = 12
+train_batch_size_per_gpu = 2
 train_num_workers = 4
 
 load_from = 'https://download.openmmlab.com/mmyolo/v0/yolox/yolox_s_fast_8xb32-300e-rtmdet-hyp_coco/yolox_s_fast_8xb32-300e-rtmdet-hyp_coco_20230210_134645-3a8dfbd7.pth'  # noqa

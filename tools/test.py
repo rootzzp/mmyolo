@@ -155,4 +155,11 @@ def main():
 
 
 if __name__ == '__main__':
+    import sys
+    sys.argv = [
+        "test.py",
+        "configs/yolov5/yolov5_s-v61_fast_1xb12-40e_cover_plate.py",
+        "work_dirs/yolov5_s-v61_fast_1xb12-40e_cover_plate/epoch_100.pth",
+        "--show-dir", "show_results"
+    ]
     main()

@@ -120,4 +120,35 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    # sys.argv = [
+    #     "",
+    #     "configs/yolov5/yolov5_s-v61_fast_1xb12-40e_cat.py",
+    # ]
+
+    # sys.argv = [
+    #     "",
+    #     "configs/yolox/yolox_s_fast_1xb12-40e-rtmdet-hyp_cat.py",
+    # ]
+
+    # sys.argv = [
+    #     "",
+    #     "configs/yolov6/yolov6_s_fast_1xb12-40e_cat.py",
+    # ]
+    import torch.nn as nn
+    import torch
+
+    loss = nn.CrossEntropyLoss()
+    input = torch.randn(3, 5, requires_grad=True)
+    print(input)
+    target = torch.empty(3, dtype=torch.long).random_(5)
+    print(target)
+    output = loss(input, target)
+    print(output)
+    output.backward()
+
+    # sys.argv = [
+    #     "",
+    #     "configs/yolov5/yolov5_s-v61_fast_1xb12-40e_cover_plate.py",
+    # ]
+    # main()

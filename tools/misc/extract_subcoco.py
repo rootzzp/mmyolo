@@ -157,4 +157,13 @@ def main():
 
 
 if __name__ == '__main__':
+    import sys
+    sys.argv = [
+        "",
+        "/mnt/data0/open_source_datasets/COCO2017", 
+        "/mnt/data0/open_source_datasets/mini_coco",
+        "--num-img", "100",
+        "--use-training-set",
+    ]
+
     main()
