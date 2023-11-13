@@ -151,4 +151,9 @@ if __name__ == '__main__':
     #     "",
     #     "configs/yolov5/yolov5_s-v61_fast_1xb12-40e_cover_plate.py",
     # ]
-    # main()
+
+    sys.argv = [
+        "",
+        "configs/yolov5/yolov5_s-v61_fast_1xb12-40e_table.py",
+    ]
+    main()

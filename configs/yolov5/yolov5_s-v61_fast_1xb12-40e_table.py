@@ -1,7 +1,7 @@
 _base_ = 'yolov5_s-v61_syncbn_fast_8xb16-300e_coco.py'
 
-data_root = './data/cat/'
-class_name = ('cat', )
+data_root = './data/icdar2017/'
+class_name = ('table', )
 num_classes = len(class_name)
 metainfo = dict(classes=class_name, palette=[(20, 220, 60)])
 
